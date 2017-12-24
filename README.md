@@ -1,4 +1,6 @@
-# {{ name }}
+# try-preact
+
+My takes on understanding Preact, plus some experiment on integrating standard Web Components.
 
 ## CLI Commands
 
