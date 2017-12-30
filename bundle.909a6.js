@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"route-profile","1":"route-home"}[chunkId]||chunkId) + ".chunk." + {"0":"1e36a","1":"65791"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"route-home","1":"route-profile"}[chunkId]||chunkId) + ".chunk." + {"0":"aa5ac","1":"1e36a"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -136,7 +136,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/try-preact/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -634,7 +634,7 @@ var async_default = /*#__PURE__*/__webpack_require__.n(components_async);
 		
 
 		function load(cb) {
-			__webpack_require__.e/* require.ensure */(1).then((function(require) {
+			__webpack_require__.e/* require.ensure */(0).then((function(require) {
 				cb(__webpack_require__("n9Ed"));
 			}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 		}
@@ -646,7 +646,7 @@ var async_default = /*#__PURE__*/__webpack_require__.n(components_async);
 		
 
 		function profile_load(cb) {
-			__webpack_require__.e/* require.ensure */(0).then((function(require) {
+			__webpack_require__.e/* require.ensure */(1).then((function(require) {
 				cb(__webpack_require__("AXXw"));
 			}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 		}
