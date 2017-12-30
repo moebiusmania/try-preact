@@ -1,0 +1,13 @@
+.search_field input{
+  width: 100%;
+  padding: 13px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+.search_field input:focus{
+  border-color: black;
+}

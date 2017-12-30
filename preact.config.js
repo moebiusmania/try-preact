@@ -11,15 +11,19 @@ const WebpackNotifierPlugin = require('webpack-notifier');
  * @param {WebpackConfigHelpers} helpers - object with useful helpers when working with config.
  **/
 export default function (config, env, helpers) {
-  
-  const plugins = [
-    new WebpackNotifierPlugin({
-      title: 'try-preact',
-      alwaysNotify: true
-    })
-  ]
 
-  config.plugins = config.plugins.concat(plugins);
+  const uglify = helpers.getPluginsByName(config, 'UglifyJsPlugin')
+    .map(e => e.index)[0];
+  
+  console.log(uglify);
+  
+  const notifier = new WebpackNotifierPlugin({
+    title: 'try-preact',
+    alwaysNotify: true
+  });
+
+  config.plugins.splice(uglify, 1);
+  config.plugins.push(notifier);
 
 
 }
