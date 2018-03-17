@@ -25,5 +25,9 @@ export default function (config, env, helpers) {
   config.plugins.splice(uglify, 1);
   config.plugins.push(notifier);
 
+  if (env.production) {
+    config.output.publicPath = "/try-preact/";
+  }
+
 
 }

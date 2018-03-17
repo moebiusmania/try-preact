@@ -21,7 +21,7 @@ export default class SearchField extends Component {
     return(
       <div class={style.search_field}>
         <input type="text" 
-          placeholder="Search a GitHub user"
+          placeholder="Search a GitHub user... and press enter"
           onKeyUp={this.searching.bind(this)}
           value={this.state.user} />
         <github-user name={this.state.user}></github-user>
